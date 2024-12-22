@@ -12,6 +12,10 @@ The **Dynamic Event Calendar Application** is a web application designed to help
 
 The application is built using React, providing a clean and responsive UI with real-time event updates.
 
+## Screenshots
+<img width="500" alt="newProject111" src="https://github.com/user-attachments/assets/2c158171-6387-4072-8c65-78153146939c" />
+<img width="500" alt="newProject112" src="https://github.com/user-attachments/assets/4ae0dea5-e694-4013-b7e0-7d7a3034b8ba" />
+
 ## Features
 
 - **Event Viewing**: Users can view all events for a specific date.
@@ -24,10 +28,6 @@ The application is built using React, providing a clean and responsive UI with r
 
 - **Frontend**: React.js
 - **Styling**: CSS
-
-## Screenshots
-<img width="500" alt="newProject111" src="https://github.com/user-attachments/assets/2c158171-6387-4072-8c65-78153146939c" />
-<img width="500" alt="newProject112" src="https://github.com/user-attachments/assets/4ae0dea5-e694-4013-b7e0-7d7a3034b8ba" />
 
 ## Instructions to Run Locally
 
