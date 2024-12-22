@@ -1,0 +1,247 @@
+.calendar {
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #2b9cff; 
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+/* header css */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bolder;
+}
+
+header button {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #3b21ff; 
+  border-radius: 5px;
+}
+
+header button:hover {
+  background-color: #add9ff; 
+  color: black;
+}
+
+header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+/* days week css */
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  background-color: #e7e7e7;
+  padding: 10px;
+  color: #000000;
+}
+
+.day-label {
+  padding: 10px;
+}
+
+
+/* all dates css */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+
+/* the day itself */
+.day {
+  border: 1px solid #ccc;
+  padding: 25px 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: bolder;
+}
+
+.day:hover {
+  background-color: #e0f7fa; /* Light cyan */
+  transform: scale(1.05);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.empty-day {
+  background: none;
+}
+
+.event-list {
+  margin-top: 5px;
+}
+
+.event {
+  background-color: #ff9500;
+  color: #fff;
+  font-size: 12px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+.event:hover {
+  background-color: #f57c00; /* Darker orange */
+}
+
+.event-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 50%;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+  display: flex;
+  font-size: 12px;
+  height: 80%;
+  overflow: scroll;
+}
+
+.event-modal section{
+  width:30rem;
+  padding: 10px;
+}
+
+.event-modal h3 {
+  margin: 0 0 10px 0;
+  color: #4caf50;
+  padding-bottom: 5px;
+  font-weight: bolder;
+}
+
+.event-modal ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.event-modal ul li {
+  margin-bottom: 10px;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 5px solid #4caf50;
+}
+
+.event-modal ul li strong {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+.event-modal label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.event-modal input,
+.event-modal textarea,
+.event-modal button {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.event-modal button {
+  cursor: pointer;
+  background-color: #05cb0c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.event-modal button:hover {
+  background-color: #388e3c;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.calendar-container {
+  display: flex;
+  margin: 10px;
+}
+
+
+.filter-panel {
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.filter-panel center{
+  background-color: #2b9cff;
+  color: white;
+  padding: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.event-item{
+  background-color: rgb(241, 241, 241);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.eventTypeList {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.eventTypeList li{
+  margin: 2px;
+}
