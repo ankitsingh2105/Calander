@@ -22,7 +22,6 @@ The application is built using React, providing a clean and responsive UI with r
 - **Event Management**: Users can add, edit, and delete events.
 - **Month Navigation**: Users can easily navigate through the months using the "Previous" and "Next" buttons.
 - **Event Filtering**: Users can filter events by date and type.
-- **Responsive Design**: The app is fully responsive and optimized for desktop and mobile views.
 
 ## Technologies Used
 
